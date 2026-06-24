@@ -81,7 +81,7 @@ graph TD
 
 ### 2. `STFINAL.py` — Signalverarbeitung & Datensatzgenerierung
 
-Dieses Python-Skript transformiert die stochastisch generierten 1D-Zeitsignale aus MATLAB (`.mat`) mittels fortschrittlicher Zeit-Frequenz-Analyse in hochauflösende 2D-Spektrogramme.
+Dieses Python-Skript transformiert die stochastisch generierten 1D-Zeitsignale aus MATLAB (`.mat`) mittels Zeit-Frequenz-Analyse in hochauflösende 2D-Spektrogramme.
 
 ```mermaid
 graph TD
