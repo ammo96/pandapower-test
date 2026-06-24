@@ -112,7 +112,7 @@ graph TD
 * **Generalized S-Transform (GST):** Berechnet die S-Transformation mit frequenzabhängig skalierter Fensterbreite zur Maximierung der Zeit-Frequenz-Auflösung.
 * **Logarithmische Kompression & Perzentil-Skalierung:** Reduziert die Signaldynamik und eliminiert statistische Ausreißer, um Gradienteninstabilitäten beim CNN-Training vorzubeugen.
 * **Daten-Augmentation (AWGN):** Beaufschlagt Signale mit additivem weißem gaußschem Rauschen für unterschiedliche Testszenarien (Clean, Mixed 20–50 dB, Feste Pegel bei 20 dB und 50 dB).
-* **Parallelisierung:** Nutzt `joblib` für hocheffiziente Multi-Core-Verarbeitung der rechenintensiven Integraltransformationen.
+* **Parallelisierung:** Nutzt `joblib` für effiziente Multi-Core-Verarbeitung der rechenintensiven Transformationen.
 
 
 
@@ -237,7 +237,7 @@ graph TD
 ```
 
 * **Zentrale Funktionen:**
-* **High-Res Vektor-Export:** Generiert eine druckreife, hochauflösende PDF der Konfusionsmatrix (`Konfusionsmatrix_Druckqualitaet.pdf`) im passenden wissenschaftlichen Farbschema (`Blues`).
+* **Exporte:** Generiert eine druckreife, hochauflösende PDF der Konfusionsmatrix (`Konfusionsmatrix_Druckqualitaet.pdf`) im passenden wissenschaftlichen Farbschema (`Blues`).
 * **Optimiertes Grad-CAM Visualisierungs-System:** Berechnet Aktivierungs-Heatmaps der letzten Faltungsschicht (`conv3`) für dedizierte Schlüsselindizes. Wendet eine **Gamma-Korrektur** ($\gamma = 0.5$) auf das S-Transformationsbild an, um feine, schwache Frequenzkomponenten für das menschliche Auge im finalen PNG-Overlay sichtbar zu machen.
 
 
