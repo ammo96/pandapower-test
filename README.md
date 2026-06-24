@@ -94,7 +94,7 @@ graph TD
         E --> F[Optional: AWGN-Rauschen addieren]
         F --> G[1D Fourier-Transformation FFT]
         G --> H[Frequenzverschiebung & Skaliertes Gauß-Fenster]
-        H --> I[Inverse FFT IFFT]
+        H --> I[Inverse FT IFT]
         I --> J[Amplitudenspektrum + Logarithmische Kompression]
         J --> K[Robustes Perzentil-Scaling 1% bis 99%]
         K --> L[Skalierung auf Zielgröße 120x120]
@@ -109,7 +109,7 @@ graph TD
 ```
 
 * **Zentrale Funktionen:**
-* **Fast Generalized S-Transform (GST):** Berechnet die S-Transformation mit frequenzabhängig skalierter Fensterbreite zur Maximierung der Zeit-Frequenz-Auflösung.
+* **Generalized S-Transform (GST):** Berechnet die S-Transformation mit frequenzabhängig skalierter Fensterbreite zur Maximierung der Zeit-Frequenz-Auflösung.
 * **Logarithmische Kompression & Perzentil-Skalierung:** Reduziert die Signaldynamik und eliminiert statistische Ausreißer, um Gradienteninstabilitäten beim CNN-Training vorzubeugen.
 * **Daten-Augmentation (AWGN):** Beaufschlagt Signale mit additivem weißem gaußschem Rauschen für unterschiedliche Testszenarien (Clean, Mixed 20–50 dB, Feste Pegel bei 20 dB und 50 dB).
 * **Parallelisierung:** Nutzt `joblib` für hocheffiziente Multi-Core-Verarbeitung der rechenintensiven Integraltransformationen.
