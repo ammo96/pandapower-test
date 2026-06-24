@@ -1,4 +1,3 @@
-```markdown
 # KI-gestützte Mustererkennung zur Charakterisierung von Netzrückwirkungen beim Laden von Elektrofahrzeugen
 
 Dieses Repository enthält den offiziellen Quellcode für die Forschungsarbeit **"Entwicklung einer KI-gestützten Mustererkennung zur Charakterisierung von Netzrückwirkungen beim Laden von Elektrofahrzeugen"**. 
