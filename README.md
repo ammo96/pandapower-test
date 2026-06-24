@@ -2,7 +2,7 @@
 
 Dieses Repository enthält den offiziellen Quellcode für die Forschungsarbeit **"Entwicklung einer KI-gestützten Mustererkennung zur Charakterisierung von Netzrückwirkungen beim Laden von Elektrofahrzeugen"**. 
 
-Das System implementiert eine vollständige Pipeline zur Erkennung, Klassifizierung und Interpretierbarkeit von 19 verschiedenen Klassen von Netzqualitätsstörungen (Power Quality Disturbances, PQDs). Die Pipeline reicht von der mathematisch-synthetischen Signalgenerierung über die fortschrittliche Signalverarbeitung auf Basis der generalisierten S-Transformation und das CNN-Training inklusive Hyperparameter-Optimierung bis hin zur modellinternen Visualisierung mittels Grad-CAM.
+Das System implementiert eine vollständige Pipeline zur Erkennung, Klassifizierung und Interpretierbarkeit von 19 verschiedenen Klassen von Netzrückwirkungen (Power Quality Disturbances, PQDs). Die Pipeline reicht von der mathematisch-synthetischen Signalgenerierung über die Signalverarbeitung auf Basis der generalisierten S-Transformation und das CNN-Training inklusive Hyperparameter-Optimierung bis hin zur modellinternen Visualisierung mittels Grad-CAM.
 
 ---
 
