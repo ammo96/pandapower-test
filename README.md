@@ -9,30 +9,30 @@ Das System implementiert eine vollständige Pipeline zur Erkennung, Klassifizier
 ## 📊 Pipeline-Übersicht
 
 ```mermaid
-graph TD
-    %% Nodes
-    A[Rohe 1D MATLAB/HDF5-Signale<br/>'pq_daten_19_klassen_sauber.mat'] 
-    B[Fast Generalized S-Transform<br/>& AWGN Rauscherweiterung]
-    C[Generierte 2D-Datensätze<br/>'.npz'-Dateien / 120x120]
-    D[Hyperparameter-Optimierung<br/>Bayesian Sweep]
-    E[Core Modell-Training<br/>NetzstoerungsCNN]
-    F[Standalone Inferenz & Export<br/>Druckgrafiken / Grad-CAM Ordner]
-
-    %% Pipeline Flow
-    A -->|STFINAL.py| B
-    B --> C
-    C -->|wandB.py| D
-    C -->|CNN-Modell.py| E
-    E -->|Auswertung.py| F
-
-    %% Styling
-    classDef process fill:#f7fafc,stroke:#4a5568,stroke-width:2px,color:#2d3748;
-    classDef data fill:#ebf8ff,stroke:#3182ce,stroke-width:2px,color:#2b6cb0;
-    classDef output fill:#f0fff4,stroke:#38a169,stroke-width:2px,color:#276749;
+    graph TD
+        %% Nodes
+        A[Rohe 1D MATLAB/HDF5-Signale<br/>'pq_daten_19_klassen_sauber.mat'] 
+        B[Fast Generalized S-Transform<br/>& AWGN Rauscherweiterung]
+        C[Generierte 2D-Datensätze<br/>'.npz'-Dateien / 120x120]
+        D[Hyperparameter-Optimierung<br/>Bayesian Sweep]
+        E[Core Modell-Training<br/>NetzstoerungsCNN]
+        F[Standalone Inferenz & Export<br/>Druckgrafiken / Grad-CAM Ordner]
     
-    class A,C data;
-    class B,D,E process;
-    class F output;
+        %% Pipeline Flow
+        A -->|STFINAL.py| B
+        B --> C
+        C -->|wandB.py| D
+        C -->|CNN-Modell.py| E
+        E -->|Auswertung.py| F
+    
+        %% Styling
+        classDef process fill:#f7fafc,stroke:#4a5568,stroke-width:2px,color:#2d3748;
+        classDef data fill:#ebf8ff,stroke:#3182ce,stroke-width:2px,color:#2b6cb0;
+        classDef output fill:#f0fff4,stroke:#38a169,stroke-width:2px,color:#276749;
+        
+        class A,C data;
+        class B,D,E process;
+        class F output;
 ```
 
 ---
