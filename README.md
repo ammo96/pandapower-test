@@ -12,12 +12,12 @@ Das System implementiert eine vollständige Pipeline zur Erkennung, Klassifizier
 graph TD
     %% Nodes
     A0[Synthetische Signalgenerierung<br/>PQDModell.m]
-    A[Rohe 1D MATLAB/HDF5-Signale<br/>'pq_daten_19_klassen_sauber.mat'] 
+    A[Rohe 1D MATLAB<br/>'pq_daten_19_klassen_sauber.mat'] 
     B[Fast Generalized S-Transform<br/>& AWGN Rauscherweiterung]
     C[Generierte 2D-Datensätze<br/>'.npz'-Dateien / 120x120]
     D[Hyperparameter-Optimierung<br/>Bayesian Sweep]
-    E[Core Modell-Training<br/>NetzstoerungsCNN]
-    F[Standalone Inferenz & Export<br/>Druckgrafiken / Grad-CAM Ordner]
+    E[Modell-Training<br/>NetzstoerungsCNN]
+    F[Export<br/>Druckgrafiken / Grad-CAM Ordner]
 
     %% Pipeline Flow
     A0 -->|Matlab Simulation| A
